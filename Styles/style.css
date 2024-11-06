@@ -1,0 +1,59 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    background-color: #f5f5f0;
+    color: black;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    margin: 0;
+}
+
+/* Estilizando o cabeçalho */
+header {
+    background-color: #a50000;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    width: 100%; /* Ajusta a largura para 100% */
+    box-sizing: border-box; /* Inclui o padding no cálculo da largura */
+    position: fixed;
+}
+
+/* Estilizando a navegação */
+nav ul {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 100%; /* Ajusta a largura para 100% */
+    margin: 0; /* Remove a margem */
+    padding: 0; /* Remove o padding */
+    box-sizing: border-box;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #f9e79f;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #a50000;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%; /* Ajusta a largura para 100% */
+    box-sizing: border-box; /* Inclui o padding no cálculo da largura */
+}
