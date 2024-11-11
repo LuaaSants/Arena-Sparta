@@ -1,0 +1,10 @@
+.page-h1 {
+    text-align: left;
+    transform: translateY(55%);
+}
+
+nav {
+    text-align: center;
+    transform: translateY(-50%) translateX(120%) scale(1.30);
+    position: absolute;
+}
