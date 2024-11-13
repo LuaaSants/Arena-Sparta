@@ -1,198 +1,226 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="../js scripts/main.js" defer></script>
     <script src="../js scripts/loja.js" defer></script>
-    <link rel="stylesheet" href="../Styles/style.css">
-    <link rel="stylesheet" href="../Styles/pageStyle.css">
-    <link rel="stylesheet" href="../Styles/lojaStyle.css">
-        <title>Arena Sparta</title>
-</head>
-<body class="modo-claro">
+    <link rel="stylesheet" href="../Styles/style.css" />
+    <link rel="stylesheet" href="../Styles/pageStyle.css" />
+    <link rel="stylesheet" href="../Styles/lojaStyle.css" />
+    <title>Arena Sparta</title>
+  </head>
+  <body class="modo-claro">
     <header class="modo-claro">
-        <h1 class="page-h1">Arena Sparta</h1>
-        <nav class="loja-nav">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="loja.html">Loja</a></li>
-                <li><a href="treinos.html">Treinos</a></li>
-                <li><a href="nutricao.html">Nutrição</a></li>
-                <li><a href="sobre.html">Sobre nós</a></li>
-                
-            </ul>
-            <a id="cart-link" onclick="ExibirCarrinho()"><img src="../Imagens/cart-regular-24.png" alt="Carrinho"><span id="kk">()</span></a>
-        </nav>
-        <button class="modo-luz"><img src="../Imagens/modo-escuro.png" alt="Modo"></button>
+      <h1 class="page-h1">Arena Sparta</h1>
+      <nav class="loja-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="loja.html">Loja</a></li>
+          <li><a href="treinos.html">Treinos</a></li>
+          <li><a href="nutricao.html">Nutrição</a></li>
+          <li><a href="sobre.html">Sobre nós</a></li>
+        </ul>
+        <a id="cart-link" onclick="ExibirCarrinho()"
+          ><img src="../Imagens/cart-regular-24.png" alt="Carrinho" /><span
+            id="cart-count"
+            >()</span
+          ></a
+        >
+      </nav>
+      <button class="modo-luz">
+        <img src="../Imagens/modo-escuro.png" alt="Modo" />
+      </button>
     </header>
-          
-        <div class="menu-category">
-            <h3>Equipamentos Fitness</h3>
 
-            <div class="menu-item">
-                <h4>Halteres</h4>
-                <img src="Imagens/haltere.jpg" alt="">
-                <p>R$ 150,00</p><button onclick="addToCart('Halteres', 150)">Adicionar</button>
-            </div>
-            
-            <div class="menu-item">
-                <h4>Barra para Flexão</h4>
-                <img src="img/barra-para-flexao.jpg" alt="">
-                <p>R$ 120,00</p><button onclick="addToCart('Barra para Flexão', 120)">Adicionar</button>
-            </div>
-            
-            <div class="menu-item">
-                <h4>Banco de Exercícios Ajustável</h4>
-                <img src="img/banco-de-exercicios.jpg" alt="">
-                <p>R$ 250,00</p><button onclick="addToCart('Banco de Exercícios Ajustável', 250)">Adicionar</button>
-            </div>
-            
-            <div class="menu-item">
-                <h4>Esteira Elétrica</h4>
-                <img src="img/esteira-eletrica.jpg" alt="">
-                <p>R$ 2.000,00</p><button onclick="addToCart('Esteira Elétrica', 2000)">Adicionar</button>
-            </div>
-            
-            <div class="menu-item">
-                <h4>Pesos para Ankle</h4>
-                <img src="img/pesos-para-ankle.jpg" alt="">
-                <p>R$ 80,00</p><button onclick="addToCart('Pesos para Ankle', 80)">Adicionar</button>
-            </div>
-            
-            <div class="menu-item">
-                <h4>Cordas para Pular</h4>
-                <img src="img/cordas-para-pular.jpg" alt="">
-                <p>R$ 40,00</p><button onclick="addToCart('Cordas para Pular', 40)">Adicionar</button>
-            </div>
-            
-            <div class="menu-item">
-                <h4>Kettlebell</h4>
-                <img src="img/kettlebell.jpg" alt="">
-                <p>R$ 120,00</p><button onclick="addToCart('Kettlebell', 120)">Adicionar</button>
-            </div>
-            
-            <div class="menu-item">
-                <h4>Colchonete de Yoga</h4>
-                <img src="img/colchonete-de-yoga.jpg" alt="">
-                <p>R$ 70,00</p><button onclick="addToCart('Colchonete de Yoga', 70)">Adicionar</button>
-            </div>
-            
-            </div>
-            
-            <div class="menu-category">
-            <h3>Acessórios Fitness</h3>
-            <div class="menu-item">
-                <h4>Luvas de Treinamento</h4> 
-                <img src="img/luvas-de-treinamento.jpg" alt="">
-                <p>R$ 40,00</p><button onclick="addToCart('Luvas de Treinamento', 40)">Adicionar</button>
-            </div>
-            
-            <div class="menu-item">
-                <h4>Cinto de Levantamento de Peso</h4> 
-                <img src="img/cinto-levantamento-peso.jpg" alt="">
-                <p>R$ 80,00</p><button onclick="addToCart('Cinto de Levantamento de Peso', 80)">Adicionar</button>
-            </div>
-            
-            <div class="menu-item">
-                <h4>Faixa Elástica</h4> 
-                <img src="img/faixa-elastica.jpg" alt="">
-                <p>R$ 30,00</p><button onclick="addToCart('Faixa Elástica', 30)">Adicionar</button>
-            </div>
-            
-            <div class="menu-item">
-                <h4>Garrafa Térmica</h4> 
-                <img src="img/garrafa-termica.jpg" alt="">
-                <p>R$ 50,00</p><button onclick="addToCart('Garrafa Térmica', 50)">Adicionar</button>
-            </div>
-            
-            <div class="menu-item">
-                <h4>Fitas para Suspensão</h4> 
-                <img src="img/fitas-suspensao.jpg" alt="">
-                <p>R$ 100,00</p><button onclick="addToCart('Fitas para Suspensão', 100)">Adicionar</button>
-            </div>
-            
-            <div class="menu-item">
-                <h4>Protetor de Pulso</h4> 
-                <img src="img/protetor-de-pulso.jpg" alt="">
-                <p>R$ 25,00</p><button onclick="addToCart('Protetor de Pulso', 25)">Adicionar</button>
-            </div>
-            
-            <div class="menu-item">
-                <h4>Meias de Compressão</h4> 
-                <img src="img/meias-compressao.jpg" alt="">
-                <p>R$ 40,00</p><button onclick="addToCart('Meias de Compressão', 40)">Adicionar</button>
-            </div>
-            
-            <div class="menu-item">
-                <h4>Capacete de Proteção</h4> 
-                <img src="img/capacete-de-protecao.jpg" alt="">
-                <p>R$ 150,00</p><button onclick="addToCart('Capacete de Proteção', 150)">Adicionar</button>
-            </div>
-            </div>
-            
-            <div class="menu-category">
-            <h3>Suplementos</h3>
-            <div class="menu-item">
-                <h4>Whey Protein</h4> 
-                <img src="img/whey-protein.jpg" alt="">
-                <p>R$ 180,00</p><button onclick="addToCart('Whey Protein', 180)">Adicionar</button>
-            </div>
-            
-            <div class="menu-item">
-                <h4>Creatina</h4> 
-                <img src="img/creatina.jpg" alt="">
-                <p>R$ 120,00</p><button onclick="addToCart('Creatina', 120)">Adicionar</button>
-            </div>
-            
-            <div class="menu-item">
-                <h4>BCAA</h4> 
-                <img src="img/bcaa.jpg" alt="">
-                <p>R$ 80,00</p><button onclick="addToCart('BCAA', 80)">Adicionar</button>
-            </div>
-            
-            <div class="menu-item">
-                <h4>Glutamina</h4> 
-                <img src="img/glutamina.jpg" alt="">
-                <p>R$ 90,00</p><button onclick="addToCart('Glutamina', 90)">Adicionar</button>
-            </div>
-            
-            <div class="menu-item">
-                <h4>Pré-Treino</h4> 
-                <img src="img/pre-treino.jpg" alt="">
-                <p>R$ 100,00</p><button onclick="addToCart('Pré-Treino', 100)">Adicionar</button>
-            </div>
-            
-            <div class="menu-item">
-                <h4>Termogênico</h4> 
-                <img src="img/termogenico.jpg" alt="">
-                <p>R$ 70,00</p><button onclick="addToCart('Termogênico', 70)">Adicionar</button>
-            </div>
-            
-            <div class="menu-item">
-                <h4>Colágeno Hidrolisado</h4> 
-                <img src="img/colageno-hidrolisado.jpg" alt="">
-                <p>R$ 60,00</p><button onclick="addToCart('Colágeno Hidrolisado', 60)">Adicionar</button>
-            </div>
-            
-            <div class="menu-item">
-                <h4>Isoflavonas</h4> 
-                <img src="img/isoflavonas.jpg" alt="">
-                <p>R$ 55,00</p><button onclick="addToCart('Isoflavonas', 55)">Adicionar</button>
-            </div>
-            </div>
-            
+    <div class="menu-category">
+      <h3>Equipamentos Fitness</h3>
+
+      <div class="menu-item">
+        <h4>Halteres</h4>
+        <img
+          src="https://imgs.search.brave.com/-rzS7aenBh_gsDqj2VNe29vmpqhSVeX1MVaLIXn38JA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/cm9wZXN0b3JlLmNv/bS5ici9tZWRpYS9j/YXRhbG9nL3Byb2R1/Y3QvY2FjaGUvODBl/ZTFiY2VlNjdhN2Rl/MGFiMjM1NmNkNDUy/MDI1NWMvaC9hL2hh/bHRlci1lbWJvcnJh/Y2hhZG8tcHJldG8t/cm9wZS1zdG9yZV81/LmpwZw"
+          alt=""
+        />
+        <p>R$ 150,00</p>
+        <button onclick="addToCart('Halteres', 150)">Adicionar</button>
+      </div>
+
+      <div class="menu-item">
+        <h4>Barra para Flexão</h4>
+        <img src="https://imgs.search.brave.com/PUFyCDrboLfGy7LDYPhl4-4y93rvHSDEiZ_sIQhKncE/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMubmV0c2hvZXMu/Y29tLmJyL3Byb2R1/dG9zL2JhcnJhLWZp/eGEtbWlzdGEtcGFy/YWxlbGEtZGUtcG9y/dGEtbG9yYmVuLXBh/cmEtZXhlcmNpY2lv/cy1hY2FkZW1pYS1t/dXNjdWxhY2FvLWd0/LTE0MDU1LzMwL1BO/Ny0wMTE3LTEzMC9Q/TjctMDExNy0xMzBf/em9vbTEuanBnP3Rz/PTE3MTIwNDk1MzQm/aW1zPTMyNng" alt="" />
+        <p>R$ 120,00</p>
+        <button onclick="addToCart('Barra para Flexão', 120)">Adicionar</button>
+      </div>
+
+      <div class="menu-item">
+        <h4>Banco de Exercícios Ajustável</h4>
+        <img src="https://imgs.search.brave.com/SCLIT08Hs10OTTc8wkKP1de11onRvEW0QeUF3U1xGBw/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9odHRw/Mi5tbHN0YXRpYy5j/b20vRF9OUV9OUF84/OTc1NTQtTUxCNDgx/NTcxODUzMDJfMTEy/MDIxLVcud2VicA" alt="" />
+        <p>R$ 250,00</p>
+        <button onclick="addToCart('Banco de Exercícios Ajustável', 250)">
+          Adicionar
+        </button>
+      </div>
+
+      <div class="menu-item">
+        <h4>Esteira Elétrica</h4>
+        <img src="https://imgs.search.brave.com/Q89xl49bJ1yv42NEANcW3f8GpBhA7nMi6h-7UTlw8Tk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudGNkbi5jb20u/YnIvaW1nL2ltZ19w/cm9kLzY0NTU1NS9l/c3RlaXJhX2VsZXRy/aWNhX3J0eDYwMF9k/b2JyYXZlbF91bHRy/YV9zaWxlbmNpb3Nh/Xzk0M18xX2NhNDhh/ZmY5ZTk2NmUxOGY2/ZDhlZjhhNDFjMGIx/MWU5LmpwZWc" alt="" />
+        <p>R$ 2.000,00</p>
+        <button onclick="addToCart('Esteira Elétrica', 2000)">Adicionar</button>
+      </div>
+
+      <div class="menu-item">
+        <h4>Pesos para Ankle</h4>
+        <img src="https://imgs.search.brave.com/c8nbW9ThdmJWlj_Mm-fW-y5u_1fc_LjJ2tOlzJI6J74/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL0kv/NTFPWG8tWEswSkwu/anBn" alt="" />
+        <p>R$ 80,00</p>
+        <button onclick="addToCart('Pesos para Ankle', 80)">Adicionar</button>
+      </div>
+
+      <div class="menu-item">
+        <h4>Cordas para Pular</h4>
+        <img src="https://imgs.search.brave.com/ckP8-qjq3we1RBuVrryS9v1kK1f4osxudXoty-3AW4A/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudGNkbi5jb20u/YnIvaW1nL2ltZ19w/cm9kLzczNjA2Ni9j/b3JkYV9kZV9wdWxh/cl9jb21fY29udGFk/b3JfZGVfZ2lyb3Nf/Ml83NV9tdHNfdDJf/YWN0ZV9zcG9ydHNf/MTQ3OV8xX2ZmOTJm/YjAyMmYwODM5ZjFl/YmMwYjQ3M2YxNjgw/NTdmLmpwZw" alt="" />
+        <p>R$ 40,00</p>
+        <button onclick="addToCart('Cordas para Pular', 40)">Adicionar</button>
+      </div>
+
+      <div class="menu-item">
+        <h4>Kettlebell</h4>
+        <img src="https://imgs.search.brave.com/eaAEgTCco8eE-Qzo3PE8j44sxJLHb8BvDtBRIwn2jRM/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTIw/NjgwMzM3My9waG90/by9rZXR0bGViZWxs/LTNkLXJlbmRlcmlu/Zy5qcGc_cz02MTJ4/NjEyJnc9MCZrPTIw/JmM9U29mMW1WTEpJ/c09sUlJSZTVnc3la/QWNZM2NCbkZ3SVRz/X19CN1g5ZWlPVT0" alt="" />
+        <p>R$ 120,00</p>
+        <button onclick="addToCart('Kettlebell', 120)">Adicionar</button>
+      </div>
+
+      <div class="menu-item">
+        <h4>Colchonete de Yoga</h4>
+        <img src="https://imgs.search.brave.com/mcf9UjdT3QcS8NQi6OtIVwwuxYVDz8Ky4xmVlXS4fFQ/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMubmV0c2hvZXMu/Y29tLmJyL3Byb2R1/dG9zL2NvbGNob25l/dGUtYWNhZGVtaWEt/dGFwZXRlLXlvZ2Et/Y29sY2hhby1lc3B1/bWEtZGVuc2lkYWRl/LXRvcC1wYXJhLXRy/ZWluby8wNi9PQlAt/MDAyOC0wMDYvT0JQ/LTAwMjgtMDA2X3pv/b20xLmpwZz90cz0x/NzEzMjg0MTcyJmlt/cz0zMjZ4" alt="" />
+        <p>R$ 70,00</p>
+        <button onclick="addToCart('Colchonete de Yoga', 70)">Adicionar</button>
+      </div>
+    </div>
+
+    <div class="menu-category">
+      <h3>Acessórios Fitness</h3>
+      <div class="menu-item">
+        <h4>Luvas de Treinamento</h4>
+        <img src="https://imgs.search.brave.com/LV8marfnpZRGwEhHAhZMmj2fiT6pJ1iyClVRQ8hTEjg/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9kZWNh/dGhsb25zdG9yZS52/dGV4YXNzZXRzLmNv/bS91bnNhZmUvNjI4/eDYyOC9jZW50ZXIv/bWlkZGxlL2h0dHBz/Oi8vZGVjYXRobG9u/cHJvLnZ0ZXhhc3Nl/dHMuY29tL2FycXVp/dm9zL2lkcy8yMjk5/Nzk5LTYyOC02Mjgv/LWx1dmEtbXVzY3Ut/cHRvLWRvbXlvcy1l/dS1zLXVzLXhzMS5q/cGc_dj02MzY4ODUy/MjgzODk5MzAwMDA" alt="" />
+        <p>R$ 40,00</p>
+        <button onclick="addToCart('Luvas de Treinamento', 40)">
+          Adicionar
+        </button>
+      </div>
+
+      <div class="menu-item">
+        <h4>Cinto de Levantamento de Peso</h4>
+        <img src="https://imgs.search.brave.com/COZQVzwdYCwvIyxdE4PxrS8slco0yA5A6dHNWCCCy9E/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMubmV0c2hvZXMu/Y29tLmJyL3Byb2R1/dG9zL2NpbnRvLWNp/bnR1cmFvLWxvbWJh/ci1scG8tY3Jvc3Mt/dHJhaW5pbmctbXVz/Y3VsYWNhby8wNi9D/NkktMDA5MS0wMDYv/QzZJLTAwOTEtMDA2/X3pvb20xLmpwZz90/cz0xNjgzNjMzNDIy/Jmltcz0zMjZ4" alt="" />
+        <p>R$ 80,00</p>
+        <button onclick="addToCart('Cinto de Levantamento de Peso', 80)">
+          Adicionar
+        </button>
+      </div>
+
+      <div class="menu-item">
+        <h4>Faixa Elástica</h4>
+        <img src="https://imgs.search.brave.com/2R1JnKKHIcIXcaIJsNmIhgCK8coAbbR9g8r2Nn3MQc4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMubmV0c2hvZXMu/Y29tLmJyL3Byb2R1/dG9zL2ZhaXhhLWVs/YXN0aWNhLWtpdC1j/b20tNS11bmlkYWRl/cy1taW5pYmFuZC1w/YXJhLXRyZWluby1h/bG9uZ2FtZW50by15/b2dhLXByb2Zpc3Np/b25hbC84OC9KMlIt/MDIwMC04ODgvSjJS/LTAyMDAtODg4X3pv/b20xLmpwZz90cz0x/Njk4NDAxOTUwJmlt/cz0zMjZ4" alt="" />
+        <p>R$ 30,00</p>
+        <button onclick="addToCart('Faixa Elástica', 30)">Adicionar</button>
+      </div>
+
+      <div class="menu-item">
+        <h4>Garrafa Térmica</h4>
+        <img src="https://imgs.search.brave.com/5zRqynbS8YbLE50IVuGFipv3fep07qj_onxxq1VALzY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMucHJlcGFyYWVu/ZW0uY29tL2NvbnRl/dWRvX2xlZ2VuZGEv/MDc2MzUzZmM1NTU3/YjgxNzMyODQ4OGU5/ODY0MzVkZWMuanBn" alt="" />
+        <p>R$ 50,00</p>
+        <button onclick="addToCart('Garrafa Térmica', 50)">Adicionar</button>
+      </div>
+
+      <div class="menu-item">
+        <h4>Fitas para Suspensão</h4>
+        <img src="https://imgs.search.brave.com/BiDTOwaQBTemAZCXxJkFGgMOuV9a_1__yjYsv3qhliA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudGNkbi5jb20u/YnIvaW1nL2ltZ19w/cm9kLzc1MTU3NS85/MF9maXRhX2RlX3N1/c3BlbnNhb19hcmdv/bGFfc2ltcGxlc180/NzNfMV9lZTI5ZDI2/ZDJmOTdjMTI4N2Iy/MGFhMGI2NjNhOWQ2/MC5qcGc" alt="" />
+        <p>R$ 100,00</p>
+        <button onclick="addToCart('Fitas para Suspensão', 100)">
+          Adicionar
+        </button>
+      </div>
+
+      <div class="menu-item">
+        <h4>Protetor de Pulso</h4>
+        <img src="https://imgs.search.brave.com/9bph-btu-4EoyoJ7YKkdB0ZDXvKtRevu1h6KgM45XEU/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMubmV0c2hvZXMu/Y29tLmJyL3Byb2R1/dG9zL3Byb3RldG9y/LXBhcmEtcHVuaG8t/ZWxhc3RpY28taGlk/cm9saWdodC1lc3Ry/ZWl0by1jaW56YS0v/MTAvSDQ3LTI1MjEt/MDEwL0g0Ny0yNTIx/LTAxMF96b29tMS5q/cGc_dHM9MTY5NDgy/OTQwNCZpbXM9MzI2/eA" alt="" />
+        <p>R$ 25,00</p>
+        <button onclick="addToCart('Protetor de Pulso', 25)">Adicionar</button>
+      </div>
+
+      <div class="menu-item">
+        <h4>Meias de Compressão</h4>
+        <img src="https://imgs.search.brave.com/e5Z-etApYMk4g2Jlso0cNCWw9dKUfJksASpuVP_o2Fg/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90cmFj/a2ZpZWxkLnZ0ZXhh/c3NldHMuY29tL2Fy/cXVpdm9zL2lkcy8y/NTIwMjQtODAwLTEx/MTg_dj02MzgwMjIy/Nzc2MTEzNzAwMDAm/d2lkdGg9ODAwJmhl/aWdodD0xMTE4JmFz/cGVjdD10cnVl" alt="" />
+        <p>R$ 40,00</p>
+        <button onclick="addToCart('Meias de Compressão', 40)">
+          Adicionar
+        </button>
+      </div>
+
+
+    <div class="menu-category">
+      <h3>Suplementos</h3>
+      <div class="menu-item">
+        <h4>Whey Protein</h4>
+        <img src="https://imgs.search.brave.com/QoVLHr3LqcKJRjt4WijU9w2uZDFVkX3L5YZ63py3h_M/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/YXdzbGkuY29tLmJy/LzYwMHgxMDAwLzI0/NjUvMjQ2NTc4Mi9w/cm9kdXRvLzI5ODc3/NzE3My9kZXNpZ24t/c2VtLW5vbWUtLTU0/LS1xdGsweGU4cnhz/LmpwZw" alt="" />
+        <p>R$ 180,00</p>
+        <button onclick="addToCart('Whey Protein', 180)">Adicionar</button>
+      </div>
+
+      <div class="menu-item">
+        <h4>Creatina</h4>
+        <img src="https://imgs.search.brave.com/A9Bbi-V-gd1MLObTXvG-CxPtHeawbd6QSs4SUBgFUtE/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudGNkbi5jb20u/YnIvaW1nL2ltZ19w/cm9kLzEzMDU4ODEv/bnV0cmF0YV9jcmVh/dGluYV9jcmVhcHVy/ZV8xNTBnXzgzXzJf/M2Q3ODAwMzk2YjYz/N2ZmOTNjYjY4ZjQ2/ZjkyNTQ5YWUuanBn" alt="" />
+        <p>R$ 120,00</p>
+        <button onclick="addToCart('Creatina', 120)">Adicionar</button>
+      </div>
+
+      <div class="menu-item">
+        <h4>BCAA</h4>
+        <img src="https://imgs.search.brave.com/uAsR7HyB49rw7twVGkRYeJXsGsa0HciDi77f-bdCBsw/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9wcm9k/dWN0LWRhdGEucmFp/YWRyb2dhc2lsLmlv/L2ltYWdlcy80MzQ3/NjM3LndlYnA" alt="" />
+        <p>R$ 80,00</p>
+        <button onclick="addToCart('BCAA', 80)">Adicionar</button>
+      </div>
+
+      <div class="menu-item">
+        <h4>Glutamina</h4>
+        <img src="https://imgs.search.brave.com/E75ytRdNX34T0kBYAplwFTkLlvmsCjpRRsk277wZbTI/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9iaW9n/ZW5zLmZiaXRzc3Rh/dGljLm5ldC9pbWcv/cC9tYXgtZ2x1dGFt/aW5hLTE1MDE1Ny8z/MzY3MTQtMS5qcGc_/dz02MjAmaD02MjAm/dj1uby12YWx1ZQ" alt="" />
+        <p>R$ 90,00</p>
+        <button onclick="addToCart('Glutamina', 90)">Adicionar</button>
+      </div>
+
+      <div class="menu-item">
+        <h4>Pré-Treino</h4>
+        <img src="https://imgs.search.brave.com/QyVRL7CmhSr-uZgB2Q5fQ2a3TKgGG4hYQIjAg-xyCeM/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMtbmEuc3NsLWlt/YWdlcy1hbWF6b24u/Y29tL2ltYWdlcy9J/LzYxUGNrMFA4RitM/LmpwZw" alt="" />
+        <p>R$ 100,00</p>
+        <button onclick="addToCart('Pré-Treino', 100)">Adicionar</button>
+      </div>
+
+      <div class="menu-item">
+        <h4>Termogênico</h4>
+        <img src="https://imgs.search.brave.com/Gma0QKfx7P1AvGtWX32dMMA9itVhUkVrNnqWIYDHHUM/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zLnpz/dC5jb20uYnIvY21z/LWFzc2V0cy8yMDIx/LzA3L21lbGhvci10/ZXJtb2dlbmljby03/LS5wbmc" alt="" />
+        <p>R$ 70,00</p>
+        <button onclick="addToCart('Termogênico', 70)">Adicionar</button>
+      </div>
+
+      <div class="menu-item">
+        <h4>Colágeno Hidrolisado</h4>
+        <img src="https://imgs.search.brave.com/2rWHhxOAsG5lS7vbfb_Xi0IIkPH-OXG853DhCFWM4xg/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudGNkbi5jb20u/YnIvaW1nL2ltZ19w/cm9kLzI5MzM5NC8x/ODBfY29sYWdlbm9f/dGlwb18xXzJfZV8z/X3ZpdGFtaW5hc182/MF9jYXBzdWxhc19u/YXR1cmVfY2VudGVy/XzIxNzFfMV8xYWE4/OWE5YWE0Mjk4YWE2/YjI2ZDZjYjJmNjFh/ZmYxNy5qcGc" alt="" />
+        <p>R$ 60,00</p>
+        <button onclick="addToCart('Colágeno Hidrolisado', 60)">
+          Adicionar
+        </button>
+      </div>
+
 
     <section id="carrinho">
-        <h2>Carrinho de Compras</h2>
-        <ul id="cart-list"></ul>
-        <p>Total: R$ <span id="total-price">0</span></p>
-        <button onclick="checkout()">Finalizar Pedido</button>
+      <h2>Carrinho de Compras</h2>
+      <ul id="cart-list"></ul>
+      <p>Total: R$ <span id="total-price">0</span></p>
+      <button onclick="checkout()">Finalizar Pedido</button>
     </section>
 
-
     <footer class="modo-claro">
-        <p>&copy; 2024 Arena Sparta. Todos os direitos reservados.</p>
+      <p>&copy; 2024 Arena Sparta. Todos os direitos reservados.</p>
     </footer>
-</body>
+  </body>
 </html>

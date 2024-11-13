@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="../js scripts/main.js" defer></script>
     <link rel="stylesheet" href="../Styles/style.css" />
-    <link rel="stylesheet" href="../Styles/homeStyle.css">
+    <link rel="stylesheet" href="../Styles/homeStyle.css" />
     <title>Arena Sparta</title>
   </head>
   <body class="modo-claro">
@@ -20,7 +20,9 @@
           <li><a href="sobre.html">Sobre nós</a></li>
         </ul>
       </nav>
-      <button class="modo-luz"><img src="../Imagens/modo-escuro.png" alt="Modo"></button>
+      <button class="modo-luz">
+        <img src="../Imagens/modo-escuro.png" alt="Modo" />
+      </button>
     </header>
 
     <section id="introducao">
@@ -34,27 +36,6 @@
     </section>
 
 
-    <div class="carousel">
-      <input type="radio" name="carousel" id="slide1" checked>
-      <input type="radio" name="carousel" id="slide2">
-      <input type="radio" name="carousel" id="slide3">
-      <div class="slides">
-        <div class="slide">
-          <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEixxxQpBFd0K_JfJwOpApXI0986YPXo_ikiruOK58Y3jXO5pr1wKIL7J5tm15I00WCieZWh1np_rpOVOir83Rze6uczkRphsrIaiPIfyIVDl0ix2VlyoiQCSGhhyCyrxGunRgfqFVcGm34/s1600/esparta-883727%252C270620131853.jpg" alt="Slide 1">
-        </div>
-        <div class="slide">
-          <img src="https://olavete.com.br/wp-content/uploads/2024/02/agoge-1260x720.webp" alt="Slide 2">
-        </div>
-        <div class="slide">
-          <img src="https://brazilgreece.com/wp-content/uploads/2024/02/autodisciplina-como-os-espartanos.webp" alt="Slide 3">
-        </div>
-      </div>
-      <div class="navigation">
-        <label for="slide1"></label>
-        <label for="slide2"></label>
-        <label for="slide3"></label>
-      </div>
-    </div>
 
     <section id="caracteristicas">
       <h2>Principais Serviços</h2>
@@ -106,6 +87,22 @@
         </li>
       </ul>
     </section>
+
+    <div class="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item">
+          <img src="https://img.freepik.com/fotos-gratis/retrato-de-antigos-guerreiros-espartanos-gregos_23-2151008491.jpg" alt="Imagem 1" />
+        </div>
+        <div class="carousel-item">
+          <img src="https://aventurasnahistoria.com.br/media/uploads/legacy/2018/06/15/espartacapaq-023948r5utghnbm.jpg" alt="Imagem 2" />
+        </div>
+        <div class="carousel-item">
+          <img src="https://www.canalhistory.com.br/sites/history.uol.com.br/files/styles/facebook_card_1200x630/public/images/2016/01/28/guerreiro-esparta-anastasios71-shutterstock.jpg" alt="Imagem 3" />
+        </div>
+      </div>
+      <button class="carousel-control prev" onclick="prevSlide()">❮</button>
+      <button class="carousel-control next" onclick="nextSlide()">❯</button>
+    </div>
 
     <section id="diferenciais">
       <h2>Diferenciais da Arena Sparta</h2>

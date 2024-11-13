@@ -27,6 +27,7 @@ img {
   display: flex; /* Cria um contêiner flexível para as categorias */
   justify-content: center; /* Centraliza as categorias horizontalmente */
   margin-bottom: 20px; /* Espaço abaixo das categorias */
+
 }
 
 .menu-category {
@@ -37,6 +38,11 @@ img {
   margin-bottom: 10px; /* Espaço abaixo do título */
   color: #f9e79f;
   text-align: center; /* Centraliza o texto do título */
+}
+
+h3{
+  background-color: #8f0000;
+  padding: 10px;
 }
 
 /* Mantém o estilo dos itens do menu */
@@ -56,7 +62,7 @@ img {
   background-color: #8f0000;
   color: #f9e79f;
   transition: transform 3.3s;
-  margin: 20px;
+  margin: 40px;
 }
 
 .menu-item h4 {
@@ -86,7 +92,7 @@ img {
 }
 
 .menu-item button:hover {
-  background-color: #8f0000;
+  background-color: white;
 }
 
 #carrinho {
@@ -119,3 +125,4 @@ img {
   text-align: center;
   margin-top: 20px;
 }
+

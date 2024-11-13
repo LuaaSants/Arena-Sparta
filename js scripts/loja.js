@@ -34,7 +34,7 @@ function updateCart() {
         cartList.appendChild(li);
     });
     document.getElementById('total-price').textContent = total.toFixed(2);
-    document.getElementById('kk').textContent = ` (${cart.length})`;
+    document.getElementById('cart-count').textContent = ` (${cart.length})`;
 }
 
 function checkout() {
