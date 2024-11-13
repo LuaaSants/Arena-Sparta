@@ -4,24 +4,191 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="../js scripts/main.js" defer></script>
+    <script src="../js scripts/loja.js" defer></script>
     <link rel="stylesheet" href="../Styles/style.css">
     <link rel="stylesheet" href="../Styles/pageStyle.css">
-    <title>Arena Sparta</title>
+    <link rel="stylesheet" href="../Styles/loja.css">
+        <title>Arena Sparta</title>
 </head>
 <body class="modo-claro">
     <header class="modo-claro">
         <h1 class="page-h1">Arena Sparta</h1>
-        <nav>
+        <nav class="loja-nav">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="loja.html">Loja</a></li>
                 <li><a href="treinos.html">Treinos</a></li>
                 <li><a href="nutricao.html">Nutrição</a></li>
                 <li><a href="sobre.html">Sobre nós</a></li>
+                
             </ul>
+            <a id="cart-link" onclick="ExibirCarrinho()"><img src="../Imagens/cart-regular-24.png" alt="Carrinho"><span id="kk">()</span></a>
         </nav>
         <button class="modo-luz"><img src="../Imagens/modo-escuro.png" alt="Modo"></button>
     </header>
+          
+        <div class="menu-category">
+            <h3>Equipamentos Fitness</h3>
+
+            <div class="menu-item">
+                <h4>Halteres</h4>
+                <img src="Imagens/haltere.jpg" alt="">
+                <p>R$ 150,00</p><button onclick="addToCart('Halteres', 150)">Adicionar</button>
+            </div>
+            
+            <div class="menu-item">
+                <h4>Barra para Flexão</h4>
+                <img src="img/barra-para-flexao.jpg" alt="">
+                <p>R$ 120,00</p><button onclick="addToCart('Barra para Flexão', 120)">Adicionar</button>
+            </div>
+            
+            <div class="menu-item">
+                <h4>Banco de Exercícios Ajustável</h4>
+                <img src="img/banco-de-exercicios.jpg" alt="">
+                <p>R$ 250,00</p><button onclick="addToCart('Banco de Exercícios Ajustável', 250)">Adicionar</button>
+            </div>
+            
+            <div class="menu-item">
+                <h4>Esteira Elétrica</h4>
+                <img src="img/esteira-eletrica.jpg" alt="">
+                <p>R$ 2.000,00</p><button onclick="addToCart('Esteira Elétrica', 2000)">Adicionar</button>
+            </div>
+            
+            <div class="menu-item">
+                <h4>Pesos para Ankle</h4>
+                <img src="img/pesos-para-ankle.jpg" alt="">
+                <p>R$ 80,00</p><button onclick="addToCart('Pesos para Ankle', 80)">Adicionar</button>
+            </div>
+            
+            <div class="menu-item">
+                <h4>Cordas para Pular</h4>
+                <img src="img/cordas-para-pular.jpg" alt="">
+                <p>R$ 40,00</p><button onclick="addToCart('Cordas para Pular', 40)">Adicionar</button>
+            </div>
+            
+            <div class="menu-item">
+                <h4>Kettlebell</h4>
+                <img src="img/kettlebell.jpg" alt="">
+                <p>R$ 120,00</p><button onclick="addToCart('Kettlebell', 120)">Adicionar</button>
+            </div>
+            
+            <div class="menu-item">
+                <h4>Colchonete de Yoga</h4>
+                <img src="img/colchonete-de-yoga.jpg" alt="">
+                <p>R$ 70,00</p><button onclick="addToCart('Colchonete de Yoga', 70)">Adicionar</button>
+            </div>
+            
+            </div>
+            
+            <div class="menu-category">
+            <h3>Acessórios Fitness</h3>
+            <div class="menu-item">
+                <h4>Luvas de Treinamento</h4> 
+                <img src="img/luvas-de-treinamento.jpg" alt="">
+                <p>R$ 40,00</p><button onclick="addToCart('Luvas de Treinamento', 40)">Adicionar</button>
+            </div>
+            
+            <div class="menu-item">
+                <h4>Cinto de Levantamento de Peso</h4> 
+                <img src="img/cinto-levantamento-peso.jpg" alt="">
+                <p>R$ 80,00</p><button onclick="addToCart('Cinto de Levantamento de Peso', 80)">Adicionar</button>
+            </div>
+            
+            <div class="menu-item">
+                <h4>Faixa Elástica</h4> 
+                <img src="img/faixa-elastica.jpg" alt="">
+                <p>R$ 30,00</p><button onclick="addToCart('Faixa Elástica', 30)">Adicionar</button>
+            </div>
+            
+            <div class="menu-item">
+                <h4>Garrafa Térmica</h4> 
+                <img src="img/garrafa-termica.jpg" alt="">
+                <p>R$ 50,00</p><button onclick="addToCart('Garrafa Térmica', 50)">Adicionar</button>
+            </div>
+            
+            <div class="menu-item">
+                <h4>Fitas para Suspensão</h4> 
+                <img src="img/fitas-suspensao.jpg" alt="">
+                <p>R$ 100,00</p><button onclick="addToCart('Fitas para Suspensão', 100)">Adicionar</button>
+            </div>
+            
+            <div class="menu-item">
+                <h4>Protetor de Pulso</h4> 
+                <img src="img/protetor-de-pulso.jpg" alt="">
+                <p>R$ 25,00</p><button onclick="addToCart('Protetor de Pulso', 25)">Adicionar</button>
+            </div>
+            
+            <div class="menu-item">
+                <h4>Meias de Compressão</h4> 
+                <img src="img/meias-compressao.jpg" alt="">
+                <p>R$ 40,00</p><button onclick="addToCart('Meias de Compressão', 40)">Adicionar</button>
+            </div>
+            
+            <div class="menu-item">
+                <h4>Capacete de Proteção</h4> 
+                <img src="img/capacete-de-protecao.jpg" alt="">
+                <p>R$ 150,00</p><button onclick="addToCart('Capacete de Proteção', 150)">Adicionar</button>
+            </div>
+            </div>
+            
+            <div class="menu-category">
+            <h3>Suplementos</h3>
+            <div class="menu-item">
+                <h4>Whey Protein</h4> 
+                <img src="img/whey-protein.jpg" alt="">
+                <p>R$ 180,00</p><button onclick="addToCart('Whey Protein', 180)">Adicionar</button>
+            </div>
+            
+            <div class="menu-item">
+                <h4>Creatina</h4> 
+                <img src="img/creatina.jpg" alt="">
+                <p>R$ 120,00</p><button onclick="addToCart('Creatina', 120)">Adicionar</button>
+            </div>
+            
+            <div class="menu-item">
+                <h4>BCAA</h4> 
+                <img src="img/bcaa.jpg" alt="">
+                <p>R$ 80,00</p><button onclick="addToCart('BCAA', 80)">Adicionar</button>
+            </div>
+            
+            <div class="menu-item">
+                <h4>Glutamina</h4> 
+                <img src="img/glutamina.jpg" alt="">
+                <p>R$ 90,00</p><button onclick="addToCart('Glutamina', 90)">Adicionar</button>
+            </div>
+            
+            <div class="menu-item">
+                <h4>Pré-Treino</h4> 
+                <img src="img/pre-treino.jpg" alt="">
+                <p>R$ 100,00</p><button onclick="addToCart('Pré-Treino', 100)">Adicionar</button>
+            </div>
+            
+            <div class="menu-item">
+                <h4>Termogênico</h4> 
+                <img src="img/termogenico.jpg" alt="">
+                <p>R$ 70,00</p><button onclick="addToCart('Termogênico', 70)">Adicionar</button>
+            </div>
+            
+            <div class="menu-item">
+                <h4>Colágeno Hidrolisado</h4> 
+                <img src="img/colageno-hidrolisado.jpg" alt="">
+                <p>R$ 60,00</p><button onclick="addToCart('Colágeno Hidrolisado', 60)">Adicionar</button>
+            </div>
+            
+            <div class="menu-item">
+                <h4>Isoflavonas</h4> 
+                <img src="img/isoflavonas.jpg" alt="">
+                <p>R$ 55,00</p><button onclick="addToCart('Isoflavonas', 55)">Adicionar</button>
+            </div>
+            </div>
+            
+
+    <section id="carrinho">
+        <h2>Carrinho de Compras</h2>
+        <ul id="cart-list"></ul>
+        <p>Total: R$ <span id="total-price">0</span></p>
+        <button onclick="checkout()">Finalizar Pedido</button>
+    </section>
 
 
     <footer class="modo-claro">

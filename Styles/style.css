@@ -1,6 +1,7 @@
 *{
-    margin: 0%;
-    padding: 0%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body.modo-claro{
@@ -11,7 +12,7 @@ body.modo-claro{
 }
 
 header.modo-claro{
-    background-color: #a50000;
+    background-color: #8f0000;
     color: white;
     padding: 20px;
     text-align: center;
@@ -24,25 +25,26 @@ header.modo-claro{
 }
 
 footer.modo-claro{
-    background-color: #a50000;
+    background-color: #8f0000;
     color: white;
     text-align: center;
     padding: 10px;
     bottom: 0;
     width: 100%;
     box-sizing: border-box;
+    
 }
 
 
 body.modo-escuro {
-    background-color: #333;
-    color: #fff;
+    background-color: #0e0e0e;
+    color: #f9e79f;
     font-family: "Comic Sans MS", "Comic Sans", cursive;
     margin: 0;
 }
 
 header.modo-escuro {
-    background-color: #a50000;
+    background-color: #8f0000;
     padding: 20px;
     text-align: center;
     width: 100%;
@@ -75,6 +77,8 @@ footer.modo-escuro {
 .modo-luz img{
     width: 30px;
     height: auto;
+    align-items: center;
+    justify-content: center;
 }
 
 h1{

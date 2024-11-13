@@ -1,0 +1,121 @@
+img {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 5px;
+}
+
+#loja-nav{
+    float: left;
+}
+
+.btn {
+  background-color: #f9e79f;
+  color: #f9e79f;
+  padding: 30px 70px;
+  border: none;
+  border-radius: 15px;
+  text-decoration: none;
+  transition: background-color 1.3s;
+  font-size: 1.3em;
+}
+
+.btn:hover {
+  background-color: #8f0000;
+}
+
+.menu-categories {
+  display: flex; /* Cria um contêiner flexível para as categorias */
+  justify-content: center; /* Centraliza as categorias horizontalmente */
+  margin-bottom: 20px; /* Espaço abaixo das categorias */
+}
+
+.menu-category {
+  margin: 20px; /* Espaço entre as categorias */
+}
+
+.menu-category h3 {
+  margin-bottom: 10px; /* Espaço abaixo do título */
+  color: #f9e79f;
+  text-align: center; /* Centraliza o texto do título */
+}
+
+/* Mantém o estilo dos itens do menu */
+.menu-items-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.menu-item {
+  display: inline-block;
+  border: 3px solid #f9e79f;
+  padding: 20px;
+  border-radius: 25px;
+  width: 270px;
+  background-color: #8f0000;
+  color: #f9e79f;
+  transition: transform 3.3s;
+  margin: 20px;
+}
+
+.menu-item h4 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.menu-item img {
+  height: 200px;
+  width: 225px;
+  border-radius: 15px;
+  margin-top: 10px;
+}
+
+.menu-item p {
+  font-size: 1.2em;
+  margin: 10px 0;
+}
+
+.menu-item button {
+  background-color: #f9e79f;
+  color: black;
+  padding: 15px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.menu-item button:hover {
+  background-color: #8f0000;
+}
+
+#carrinho {
+  color: #f9e79f;
+  padding: 20px;
+  background: #8f0000;
+  text-align: center;
+  margin-top: 20px;
+  position: fixed;
+  opacity: 0;
+
+  border-radius: 10px;
+  border-style: solid;
+
+  width: 50vw;
+  height: 40vh;
+  bottom: 25vh;
+  left: 25vw;
+  transition: all 0.5s ease-in-out;
+}
+
+#carrinho.exibir {
+  opacity: 1;
+}
+
+#contato {
+  color: #f9e79f;
+  padding: 20px;
+  background: #8f0000;
+  text-align: center;
+  margin-top: 20px;
+}
